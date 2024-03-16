@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="806.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hosdemo.Doctordashboard">
+    <children>
+        <TableView fx:id="tvPatientAp" layoutX="263.0" layoutY="122.0" prefHeight="200.0" prefWidth="537.0">
+            <columns>
+                <TableColumn fx:id="col_apid" prefWidth="94.4000244140625" text="Appointmentid" />
+                <TableColumn fx:id="col_pname" prefWidth="78.39996337890625" text="Patientname" />
+                <TableColumn fx:id="col_slot" prefWidth="74.4000244140625" text="Slot" />
+                <TableColumn fx:id="col_status" prefWidth="107.199951171875" text="Status" />
+                <TableColumn fx:id="col_date" prefWidth="181.60003662109375" text="Date" />
+            </columns>
+        </TableView>
+        <Label layoutX="263.0" layoutY="14.0" prefHeight="55.0" prefWidth="304.0" text="Doctor Dasboard">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+        <AnchorPane prefHeight="538.0" prefWidth="251.0" style="-fx-background-color: ORANGE;">
+         <children>
+            <Button fx:id="back3" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDoctorDashBoardBack" prefHeight="35.0" prefWidth="90.0" text="Back" />
+            <Label layoutY="201.0" prefHeight="22.0" prefWidth="90.0" text="Slot                 :" />
+            <Label layoutY="246.0" prefHeight="22.0" prefWidth="90.0" text="Date                :" />
+            <TextField fx:id="doc_slot" layoutX="91.0" layoutY="199.0" />
+            <TextField fx:id="doc_date" layoutX="91.0" layoutY="244.0" />
+            <Label layoutY="160.0" prefHeight="22.0" prefWidth="98.0" text="Appointmentid :" />
+            <TextField fx:id="doc_apid" layoutX="91.0" layoutY="158.0" />
+         </children></AnchorPane>
+        <Button fx:id="accept_btn" layoutX="350.0" layoutY="334.0" mnemonicParsing="false" onAction="#onAcceptClicked" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #00AB41;" text="ACCEPT" textFill="WHITE" />
+        <Button fx:id="reject_btn" layoutX="525.0" layoutY="334.0" mnemonicParsing="false" onAction="#onRejectClicked" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: RED;" text="REJECT" textFill="WHITE" />
+    </children>
+</AnchorPane>
